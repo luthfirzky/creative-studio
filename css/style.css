@@ -1,0 +1,150 @@
+/* Creative Studio — landing page styles */
+body{margin:0;background:#FAF8F3}
+html{scroll-behavior:smooth}
+a{color:#1C1C1C}a:hover{color:#8A5A00}
+*{box-sizing:border-box}
+button,input,select,textarea{font-family:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #F2B233;outline-offset:2px}
+.nav-links{display:flex}
+.nav-burger{display:none}
+.bento{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.span-2{grid-column:span 2}
+.hero-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.contact-grid{display:grid;grid-template-columns:5fr 7fr}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr}
+.form-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.thumb .overlay{opacity:0;transition:opacity .25s ease}
+.thumb:hover .overlay,.thumb:focus-within .overlay{opacity:1}
+.card-lift{transition:transform .25s ease, box-shadow .25s ease}
+.card-lift:hover{transform:translateY(-4px);box-shadow:0 18px 40px -20px rgba(28,28,28,.35)}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-track{animation:marquee 32s linear infinite}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none}html{scroll-behavior:auto}}
+@media (max-width:1023px){
+.bento,.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.contact-grid,.hero-grid{grid-template-columns:minmax(0,1fr)}
+.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* ---------- MOTION ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.4) rotate(-20deg)}70%{opacity:1;transform:scale(1.12) rotate(6deg)}100%{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes drop{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+@keyframes reveal{from{opacity:0;transform:translateY(48px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes navsolid{to{background:rgba(20,20,20,.96);box-shadow:0 14px 34px -14px rgba(0,0,0,.5)}}
+
+/* hero entrance (on load) */
+#top > section:first-child > div:first-child > *{animation:rise .9s cubic-bezier(.2,.7,.2,1) backwards}
+#top > section:first-child > div:first-child > *:nth-child(2){animation-delay:.1s}
+#top > section:first-child > div:first-child > *:nth-child(3){animation-delay:.22s}
+#top > section:first-child > div:first-child > *:nth-child(4){animation-delay:.34s}
+#hero-title > span:first-of-type{display:inline-flex;animation:pop .8s .55s cubic-bezier(.3,1.4,.5,1) backwards}
+.hero-grid > *{animation:rise 1s .45s cubic-bezier(.2,.7,.2,1) backwards}
+.hero-grid > *:nth-child(2){animation-delay:.6s}
+.hero-grid > div:nth-child(2) > div:first-child{animation:float 6s 1.6s ease-in-out infinite}
+.hero-grid [style*="6px 6px 0 0"]{transform-origin:bottom;animation:grow .9s cubic-bezier(.2,.7,.2,1) backwards}
+.hero-grid [style*="6px 6px 0 0"]:nth-child(1){animation-delay:1s}
+.hero-grid [style*="6px 6px 0 0"]:nth-child(2){animation-delay:1.08s}
+.hero-grid [style*="6px 6px 0 0"]:nth-child(3){animation-delay:1.16s}
+.hero-grid [style*="6px 6px 0 0"]:nth-child(4){animation-delay:1.24s}
+.hero-grid [style*="6px 6px 0 0"]:nth-child(5){animation-delay:1.32s}
+.hero-grid [style*="6px 6px 0 0"]:nth-child(6){animation-delay:1.4s}
+
+/* micro-interactions */
+a,button{transition:transform .25s ease,background-color .25s ease,color .2s ease,border-color .2s ease,box-shadow .25s ease}
+a svg,button svg{transition:transform .25s ease}
+a[style*="999px"]:hover,button[style*="999px"]:hover{transform:translateY(-2px)}
+a[style*="999px"]:hover svg,button[style*="999px"]:hover svg{transform:translate(3px,-2px)}
+.nav-links a:hover{color:#F2B233 !important}
+.bento article > div:first-child > div{transition:transform .35s cubic-bezier(.3,1.4,.5,1)}
+.bento article:hover > div:first-child > div{transform:rotate(-8deg) scale(1.08)}
+.bento [aria-hidden="true"] > div{transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
+.bento article:hover [aria-hidden="true"] > div:nth-child(odd){transform:rotate(45deg) scale(.9)}
+.bento article:hover [aria-hidden="true"] > div:nth-child(even){transform:translateY(-6px)}
+.thumb > div:first-child > div{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.thumb:hover > div:first-child > div{transform:scale(1.06) rotate(-1.5deg)}
+.thumb .overlay > *{transform:translateY(12px);transition:transform .35s ease}
+.thumb:hover .overlay > *,.thumb:focus-within .overlay > *{transform:none}
+.process-grid > li span{transition:color .3s ease,transform .3s ease;display:inline-block}
+.process-grid > li:hover span{color:#F2B233 !important;transform:translateX(6px)}
+#testimonials button:hover{transform:scale(1.08)}
+.menu-drop{animation:drop .3s ease-out backwards}
+#contact input,#contact select,#contact textarea{transition:border-color .2s ease,box-shadow .2s ease,background-color .2s ease}
+#contact input:focus,#contact select:focus,#contact textarea:focus{border-color:#C98A00 !important;background:#FFFFFF !important;box-shadow:0 0 0 4px rgba(242,178,51,.25)}
+#contact [role="status"]{animation:rise .6s ease-out backwards}
+@media (hover:none){.thumb .overlay{opacity:1;background:linear-gradient(to top,rgba(28,28,28,.85),rgba(28,28,28,0) 60%) !important}.thumb .overlay > *{transform:none}}
+
+/* scroll progress + reveal (scroll-driven; browsers without support simply show content) */
+.progress{display:none}
+@supports (animation-timeline: view()){
+.progress{display:block;position:fixed;top:0;left:0;right:0;height:3px;background:#F2B233;transform-origin:left;z-index:60;animation:progress linear both;animation-timeline:scroll(root)}
+header nav{animation:navsolid linear both;animation-timeline:scroll(root);animation-range:0px 180px}
+#top > section:nth-child(2),#services > div > div:first-child,.bento > article,#work > div > div:first-child,#work [role="group"],.work-grid article,#process > div > div:first-child,.process-grid > li,#testimonials > div > *,.contact-grid > div,footer .footer-grid > *{animation:reveal linear backwards;animation-timeline:view();animation-range:entry 0% entry 45%}
+.bento > article:nth-child(even),.process-grid > li:nth-child(2),.contact-grid > div:nth-child(2),footer .footer-grid > *:nth-child(2){animation-range:entry 8% entry 55%}
+.process-grid > li:nth-child(3),footer .footer-grid > *:nth-child(3){animation-range:entry 14% entry 62%}
+.process-grid > li:nth-child(4),footer .footer-grid > *:nth-child(4){animation-range:entry 20% entry 70%}
+.work-grid article:nth-child(3n+2){animation-range:entry 8% entry 55%}
+.work-grid article:nth-child(3n){animation-range:entry 16% entry 64%}
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1023px){
+.nav-links a{padding:12px 8px !important;font-size:13px !important}
+header nav > a:first-child{font-size:19px !important}
+.nav-cta{padding:11px 16px !important}
+#top > section:first-child{padding-top:64px !important}
+#services,#work,#process,#testimonials{padding-top:80px !important;padding-bottom:80px !important}
+.hero-grid > div{min-height:auto !important}
+.hero-grid > div:first-child{gap:32px !important}
+}
+@media (max-width:767px){
+.nav-links{display:none}
+.nav-cta{display:none !important}
+.nav-burger{display:inline-flex}
+.bento,.work-grid,.process-grid,.form-2,.footer-grid{grid-template-columns:minmax(0,1fr)}
+.span-2{grid-column:auto}
+header{padding:10px 12px 0 !important}
+header nav{padding:8px 8px 8px 18px !important;border-radius:14px !important}
+#top > section:first-child{padding:48px 16px 24px !important}
+#top > section:first-child > div:first-child{gap:20px !important}
+#top > section:first-child > div:first-child > div:last-child{width:100%}
+#top > section:first-child > div:first-child > div:last-child a{flex:1 1 100%;justify-content:center}
+#top > section:first-child > div:first-child > p{font-size:16px !important}
+.hero-grid{margin-top:40px !important}
+.hero-grid > div{padding:24px !important;border-radius:20px !important}
+.hero-grid [style*="grid-template-columns: 1fr 3fr"]{grid-template-columns:minmax(0,1fr) !important}
+.hero-grid [style*="grid-template-columns: 1fr 3fr"] > div:first-child{display:none !important}
+#services,#work,#process,#testimonials{padding:64px 16px !important}
+#services > div,#work > div,#process > div{gap:32px !important}
+.bento > article{padding:24px !important;min-height:auto !important;gap:28px !important;border-radius:20px !important}
+.bento > article h3{font-size:24px !important}
+.bento [aria-hidden="true"]{width:168px !important}
+.process-grid{gap:28px !important}
+#testimonials figure{border-radius:22px !important}
+#testimonials figcaption{flex-direction:column;align-items:flex-start !important}
+#contact{padding:0 16px 64px !important}
+.contact-grid > div{padding:24px !important;border-radius:22px !important}
+#contact button[style*="align-self"]{align-self:stretch !important;justify-content:center}
+footer{padding:56px 16px 28px !important}
+footer .footer-grid{gap:32px !important}
+}
+
+/* ---------- STATIC-SITE ADDITIONS ---------- */
+[hidden]{display:none !important}
+.filter-btn{min-height:44px;padding:0 20px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;background:#FFFFFF;color:#1C1C1C;border:1px solid #DEDBD2}
+.filter-btn:hover{border-color:#1C1C1C}
+.filter-btn.is-active{background:#1C1C1C;color:#FFFFFF;border-color:#1C1C1C}
+.work-grid article.is-entering{animation:rise .5s cubic-bezier(.2,.7,.2,1) backwards}
+.svc-chip{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 16px;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;background:#FAF8F3;border:1px solid #D9D5CB;transition:background-color .2s ease,border-color .2s ease}
+.svc-chip input{width:18px;height:18px;accent-color:#1C1C1C;margin:0}
+.svc-chip:has(input:checked){background:#FDF3DA;border-color:#C98A00}
+#testiQuote.is-changing{animation:rise .45s ease-out backwards}
+#contactForm :user-invalid{border-color:#B42318 !important}
+
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}.progress{display:none !important}}

@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Creative Studio — Digital Product Studio</title>
+<meta name="description" content="Creative Studio membantu bisnis berkembang melalui desain UI/UX intuitif, pengembangan web yang performan, dan quality assurance tanpa kompromi.">
+<meta name="theme-color" content="#1C1C1C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph (preview saat link dibagikan di WhatsApp, LinkedIn, dll.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Creative Studio — Digital Product Studio">
+<meta property="og:description" content="Desain UI/UX, pengembangan web, dan QA dalam satu studio.">
+<!-- <meta property="og:image" content="https://DOMAIN-ANDA/og-image.png"> -->
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Creative Studio — Digital Product Studio">
+<meta name="twitter:description" content="Desain UI/UX, pengembangan web, dan QA dalam satu studio.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<div style="font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif; color: #1C1C1C; background: #FAF8F3; overflow-x: clip">
+<div class="progress" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header style="position: sticky; top: 0; z-index: 50; padding: 16px 20px 0">
+<nav aria-label="Main" style="max-width: 1240px; margin: 0 auto; background: rgba(28,28,28,0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-radius: 16px; padding: 10px 12px 10px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="color: #F2B233; text-decoration: none; font-weight: 800; font-size: 22px; letter-spacing: -0.03em; padding: 8px 0">creativestudio<span style="color: #FFFFFF">.</span></a>
+<div class="nav-links" style="align-items: center; gap: 4px">
+<a href="#services" style="color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 14px">Services</a>
+<a href="#work" style="color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 14px">Portfolio</a>
+<a href="#process" style="color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 14px">Process</a>
+<a href="#testimonials" style="color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 14px">Testimonials</a>
+</div>
+<a class="nav-cta" href="#contact" style="background: #F2B233; color: #1C1C1C; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 999px; align-items: center; gap: 8px; display: inline-flex">Let's Talk
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+</a>
+<button class="nav-burger" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" style="background: transparent; border: 1px solid rgba(255,255,255,0.25); color: #FFFFFF; width: 44px; height: 44px; border-radius: 12px; align-items: center; justify-content: center; cursor: pointer">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
+</nav>
+<div id="mobileMenu" class="menu-drop" hidden style="max-width: 1240px; margin: 8px auto 0; background: #1C1C1C; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 4px">
+<a href="#services" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 500; padding: 14px 12px">Services</a>
+<a href="#work" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 500; padding: 14px 12px">Portfolio</a>
+<a href="#process" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 500; padding: 14px 12px">Process</a>
+<a href="#testimonials" style="color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 500; padding: 14px 12px">Testimonials</a>
+<a href="#contact" style="background: #F2B233; color: #1C1C1C; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 12px; border-radius: 12px; text-align: center; margin-top: 6px">Let's Talk</a>
+</div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section aria-labelledby="hero-title" style="max-width: 1240px; margin: 0 auto; padding: 88px 20px 40px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #3D3D3A">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C98A00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6c0 7 4 11 13 11"></path><path d="m14 13 4 4-4 4"></path></svg>
+Digital Product Studio
+</div>
+<h1 id="hero-title" style="margin: 0; font-size: clamp(2.4rem, 5.6vw, 4.75rem); line-height: 1.04; letter-spacing: -0.045em; font-weight: 700; max-width: 1040px">We Craft High-Impact
+<span style="display: inline-flex; vertical-align: middle; align-items: center; justify-content: center; width: 1.05em; height: 0.9em; background: #F2B233; border-radius: 0.2em; margin: 0 0.08em">
+<svg width="50%" height="50%" viewBox="0 0 24 24" fill="none" stroke="#1C1C1C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6c0 7 4 11 13 11"></path><path d="m14 13 4 4-4 4"></path></svg>
+</span>
+Digital Products <span style="color: #8A8A85">&amp; Seamless User Experiences</span></h1>
+<p style="margin: 0; max-width: 620px; font-size: 17px; line-height: 1.65; color: #4F4F4B">Membantu bisnis berkembang melalui desain UI/UX intuitif, pengodean performan, dan penjaminan kualitas tanpa kompromi.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 4px">
+<a href="#work" style="background: #1C1C1C; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px; padding: 15px 26px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px">View Selected Work
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F2B233" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"></path></svg>
+</a>
+<a href="#contact" style="background: #FFFFFF; color: #1C1C1C; text-decoration: none; font-weight: 600; font-size: 15px; padding: 14px 25px; border-radius: 999px; border: 1px solid #DEDBD2; display: inline-flex; align-items: center; gap: 10px">Schedule a Call
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>
+</a>
+</div>
+</div>
+
+<!-- Hero showcase -->
+<div class="hero-grid" style="gap: 16px; margin-top: 64px">
+<div style="background: #1C1C1C; color: #FFFFFF; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 440px">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: #D6D6D2">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F2B233" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6c0 7 4 11 13 11"></path><path d="m14 13 4 4-4 4"></path></svg>
+About the studio</div>
+<h2 style="margin: 0; font-size: clamp(2rem, 3.4vw, 2.9rem); line-height: 1.05; letter-spacing: -0.04em; font-weight: 700">Design, code &amp; QA.<br><span style="color: #9C9C97">One team.</span></h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.65; color: #D6D6D2; max-width: 440px">Kami mendampingi produk digital dari riset awal hingga peluncuran — desainer, engineer, dan QA bekerja dalam satu alur yang transparan.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<a href="#services" style="background: #F2B233; color: #1C1C1C; text-decoration: none; font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 999px">See Services</a>
+<a href="#process" style="background: #FFFFFF; color: #1C1C1C; text-decoration: none; font-weight: 600; font-size: 14px; padding: 12px 20px; border-radius: 999px">How We Work</a>
+</div>
+</div>
+<div style="border: 1px solid #45453F; background: #262624; border-radius: 18px; padding: 14px; display: flex; gap: 16px; align-items: center">
+<div aria-hidden="true" style="width: 96px; height: 80px; flex-shrink: 0; border-radius: 12px; background: #F6E3B4; padding: 10px; display: flex; flex-direction: column; gap: 6px">
+<div style="height: 8px; width: 60%; background: #1C1C1C; border-radius: 4px"></div>
+<div style="flex: 1; display: flex; gap: 6px; align-items: flex-end">
+<div style="flex: 1; height: 40%; background: #C98A00; border-radius: 3px"></div>
+<div style="flex: 1; height: 65%; background: #C98A00; border-radius: 3px"></div>
+<div style="flex: 1; height: 90%; background: #1C1C1C; border-radius: 3px"></div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 16px; font-weight: 600; line-height: 1.35">[Featured project: Fintech dashboard redesign]</div>
+<a href="#work" style="color: #F2B233; font-size: 13px; font-weight: 600; text-decoration: none">See case study →</a>
+</div>
+</div>
+</div>
+
+<div style="background: #EDE8DC; border-radius: 24px; padding: 28px; min-height: 440px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; overflow: hidden">
+<!-- product mockup -->
+<div aria-hidden="true" style="background: #FFFFFF; border-radius: 16px; box-shadow: 0 24px 50px -28px rgba(28,28,28,0.45); overflow: hidden">
+<div style="display: flex; gap: 6px; padding: 12px 14px; border-bottom: 1px solid #EEEBE3">
+<div style="width: 10px; height: 10px; border-radius: 50%; background: #E2DED4"></div>
+<div style="width: 10px; height: 10px; border-radius: 50%; background: #E2DED4"></div>
+<div style="width: 10px; height: 10px; border-radius: 50%; background: #E2DED4"></div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 3fr; min-height: 220px">
+<div style="border-right: 1px solid #EEEBE3; padding: 14px; display: flex; flex-direction: column; gap: 10px">
+<div style="height: 10px; width: 70%; background: #1C1C1C; border-radius: 4px"></div>
+<div style="height: 8px; width: 85%; background: #E9E5DA; border-radius: 4px"></div>
+<div style="height: 8px; width: 60%; background: #F2B233; border-radius: 4px"></div>
+<div style="height: 8px; width: 75%; background: #E9E5DA; border-radius: 4px"></div>
+<div style="height: 8px; width: 50%; background: #E9E5DA; border-radius: 4px"></div>
+</div>
+<div style="padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+<div style="background: #FAF8F3; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 6px"><div style="height: 6px; width: 50%; background: #CFCAbe; border-radius: 3px"></div><div style="height: 14px; width: 70%; background: #1C1C1C; border-radius: 4px"></div></div>
+<div style="background: #FAF8F3; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 6px"><div style="height: 6px; width: 50%; background: #CFCABE; border-radius: 3px"></div><div style="height: 14px; width: 55%; background: #1C1C1C; border-radius: 4px"></div></div>
+<div style="background: #F2B233; border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 6px"><div style="height: 6px; width: 50%; background: #8A5A00; border-radius: 3px"></div><div style="height: 14px; width: 65%; background: #1C1C1C; border-radius: 4px"></div></div>
+</div>
+<div style="flex: 1; display: flex; align-items: flex-end; gap: 8px; min-height: 110px; padding-top: 10px">
+<div style="flex: 1; height: 35%; background: #E9E5DA; border-radius: 6px 6px 0 0"></div>
+<div style="flex: 1; height: 55%; background: #E9E5DA; border-radius: 6px 6px 0 0"></div>
+<div style="flex: 1; height: 45%; background: #E9E5DA; border-radius: 6px 6px 0 0"></div>
+<div style="flex: 1; height: 70%; background: #E9E5DA; border-radius: 6px 6px 0 0"></div>
+<div style="flex: 1; height: 62%; background: #E9E5DA; border-radius: 6px 6px 0 0"></div>
+<div style="flex: 1; height: 95%; background: #1C1C1C; border-radius: 6px 6px 0 0"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<div style="background: #FFFFFF; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 26px; font-weight: 700; letter-spacing: -0.03em">[XX]<span style="color: #C98A00">+</span></div>
+<div style="font-size: 13px; color: #55554F">Projects shipped</div>
+</div>
+<div style="background: #FFFFFF; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 26px; font-weight: 700; letter-spacing: -0.03em">[XX]<span style="color: #C98A00">%</span></div>
+<div style="font-size: 13px; color: #55554F">Client retention rate</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ LOGO MARQUEE ============ -->
+<section aria-label="Our clients" style="padding: 24px 0 40px; overflow: hidden">
+<p style="text-align: center; margin: 0 0 22px; font-size: 13px; color: #55554F; font-weight: 500">Dipercaya oleh tim produk dari berbagai industri</p>
+<div style="overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)">
+<div class="marquee-track" style="display: flex; gap: 64px; width: max-content; padding: 6px 0">
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div aria-hidden="true" style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div aria-hidden="true" style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div aria-hidden="true" style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div aria-hidden="true" style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div aria-hidden="true" style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+<div aria-hidden="true" style="display: inline-flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; color: #6B6B66; white-space: nowrap">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="4"></rect></svg>
+[Client Logo]
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" aria-labelledby="services-title" style="background: #FFFFFF; padding: 96px 20px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #3D3D3A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C98A00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6c0 7 4 11 13 11"></path><path d="m14 13 4 4-4 4"></path></svg>Services</div>
+<h2 id="services-title" style="margin: 0; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.05; letter-spacing: -0.04em; font-weight: 700">Everything You Need<br><span style="color: #8A8A85">To Ship With Confidence</span></h2>
+</div>
+<p style="margin: 0; max-width: 420px; font-size: 16px; line-height: 1.65; color: #4F4F4B">Empat disiplin inti dalam satu studio — sehingga keputusan desain, kode, dan kualitas tidak pernah terputus di tengah jalan.</p>
+</div>
+
+<div class="bento" style="gap: 16px">
+<!-- 1 -->
+<article class="span-2 card-lift" style="background: #1C1C1C; color: #FFFFFF; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 320px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px">
+<span style="font-size: 13px; color: #B9B9B4; font-weight: 500">01 — Design</span>
+<div style="width: 56px; height: 56px; border-radius: 16px; background: #F2B233; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.6 7.6"></path><circle cx="11" cy="11" r="2"></circle></svg>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-size: 30px; letter-spacing: -0.03em; font-weight: 700">UI/UX &amp; Product Design</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="font-size: 13px; padding: 8px 14px; border-radius: 999px; border: 1px solid #45453F; color: #E6E6E2">Wireframing</span>
+<span style="font-size: 13px; padding: 8px 14px; border-radius: 999px; border: 1px solid #45453F; color: #E6E6E2">High-fidelity Prototyping</span>
+<span style="font-size: 13px; padding: 8px 14px; border-radius: 999px; border: 1px solid #45453F; color: #E6E6E2">Design Systems</span>
+</div>
+</div>
+</article>
+<!-- 2 -->
+<article class="card-lift" style="background: #F2B233; color: #1C1C1C; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 320px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px">
+<span style="font-size: 13px; font-weight: 600">02 — Engineering</span>
+<div style="width: 56px; height: 56px; border-radius: 16px; background: #1C1C1C; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F2B233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"></path></svg>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 26px; letter-spacing: -0.03em; font-weight: 700; line-height: 1.15">Frontend &amp; Web Development</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">
+<li>Responsive Web Apps</li>
+<li>Performance Optimization</li>
+<li>CMS Integration</li>
+</ul>
+</div>
+</article>
+<!-- 3 -->
+<article class="card-lift" style="background: #FAF8F3; border: 1px solid #ECE8DE; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 320px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px">
+<span style="font-size: 13px; color: #55554F; font-weight: 500">03 — Quality</span>
+<div style="width: 56px; height: 56px; border-radius: 16px; background: #FFFFFF; border: 1px solid #ECE8DE; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 26px; letter-spacing: -0.03em; font-weight: 700; line-height: 1.15">QA &amp; Automated Testing</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #4F4F4B">
+<li>End-to-End Testing</li>
+<li>API Testing</li>
+<li>Performance &amp; Load Testing</li>
+</ul>
+</div>
+</article>
+<!-- 4 -->
+<article class="span-2 card-lift" style="background: #FAF8F3; border: 1px solid #ECE8DE; border-radius: 24px; padding: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; min-height: 320px">
+<div style="display: flex; flex-direction: column; justify-content: space-between; gap: 32px; height: 100%; flex: 1 1 300px">
+<span style="font-size: 13px; color: #55554F; font-weight: 500">04 — Brand</span>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-size: 30px; letter-spacing: -0.03em; font-weight: 700">Brand Strategy &amp; Visuals</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="font-size: 13px; padding: 8px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECE8DE">Visual Identity</span>
+<span style="font-size: 13px; padding: 8px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECE8DE">Logo Design</span>
+<span style="font-size: 13px; padding: 8px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid #ECE8DE">Pitch Decks</span>
+</div>
+</div>
+</div>
+<div aria-hidden="true" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; width: 240px">
+<div style="aspect-ratio: 1; border-radius: 16px; background: #1C1C1C"></div>
+<div style="aspect-ratio: 1; border-radius: 50%; background: #F2B233"></div>
+<div style="aspect-ratio: 1; border-radius: 16px; background: #E9E5DA"></div>
+<div style="aspect-ratio: 1; border-radius: 50%; background: #E9E5DA"></div>
+<div style="aspect-ratio: 1; border-radius: 16px; background: #C98A00"></div>
+<div style="aspect-ratio: 1; border-radius: 16px 50% 16px 50%; background: #1C1C1C"></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section id="work" aria-labelledby="work-title" style="padding: 96px 20px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #3D3D3A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C98A00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6c0 7 4 11 13 11"></path><path d="m14 13 4 4-4 4"></path></svg>Selected Work</div>
+<h2 id="work-title" style="margin: 0; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.05; letter-spacing: -0.04em; font-weight: 700">Work That Moves<br><span style="color: #8A8A85">The Numbers</span></h2>
+</div>
+
+<div role="group" aria-label="Filter projects" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px">
+<button type="button" class="filter-btn is-active" data-filter="All" aria-pressed="true">All</button>
+<button type="button" class="filter-btn" data-filter="UI/UX" aria-pressed="false">UI/UX</button>
+<button type="button" class="filter-btn" data-filter="Development" aria-pressed="false">Development</button>
+<button type="button" class="filter-btn" data-filter="QA" aria-pressed="false">QA</button>
+</div>
+
+<div class="work-grid" style="gap: 20px">
+<article data-cat="UI/UX" style="display: flex; flex-direction: column; gap: 16px">
+<div class="thumb" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3">
+<div aria-hidden="true" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #EDE8DC">
+<div style="width: 78%; height: 72%; background: #FFFFFF; border-radius: 12px; box-shadow: 0 20px 40px -24px rgba(28,28,28,0.5); padding: 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="height: 8px; width: 40%; background: #1C1C1C; border-radius: 4px"></div>
+<div style="height: 6px; width: 70%; background: #E9E5DA; border-radius: 3px"></div>
+<div style="flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 6px">
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+<div style="border-radius: 6px; background: #F2B233"></div>
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+</div>
+</div>
+</div>
+<div class="overlay" style="position: absolute; inset: 0; background: rgba(28,28,28,0.82); display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; gap: 10px">
+<span style="align-self: flex-start; background: #F2B233; color: #1C1C1C; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px">[+40% Conversion Rate]</span>
+<a href="#contact" style="color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">View case study →</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #1C1C1C; color: #FFFFFF">UI/UX</span>
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #EDE8DC; color: #3D3D3A">Fintech</span>
+</div>
+<h3 style="margin: 0; font-size: 20px; letter-spacing: -0.02em; font-weight: 700">[Fintech Dashboard Redesign]</h3>
+<p style="margin: 0; font-size: 14px; color: #55554F">[Client Name]</p>
+</div>
+</article>
+<article data-cat="Development" style="display: flex; flex-direction: column; gap: 16px">
+<div class="thumb" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3">
+<div aria-hidden="true" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #F6E3B4">
+<div style="width: 78%; height: 72%; background: #FFFFFF; border-radius: 12px; box-shadow: 0 20px 40px -24px rgba(28,28,28,0.5); padding: 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="height: 8px; width: 40%; background: #1C1C1C; border-radius: 4px"></div>
+<div style="height: 6px; width: 70%; background: #E9E5DA; border-radius: 3px"></div>
+<div style="flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 6px">
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+<div style="border-radius: 6px; background: #1C1C1C"></div>
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+</div>
+</div>
+</div>
+<div class="overlay" style="position: absolute; inset: 0; background: rgba(28,28,28,0.82); display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; gap: 10px">
+<span style="align-self: flex-start; background: #F2B233; color: #1C1C1C; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px">[Key metric / impact]</span>
+<a href="#contact" style="color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">View case study →</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #1C1C1C; color: #FFFFFF">Development</span>
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #EDE8DC; color: #3D3D3A">E-Commerce</span>
+</div>
+<h3 style="margin: 0; font-size: 20px; letter-spacing: -0.02em; font-weight: 700">[Headless Storefront Build]</h3>
+<p style="margin: 0; font-size: 14px; color: #55554F">[Client Name]</p>
+</div>
+</article>
+<article data-cat="QA" style="display: flex; flex-direction: column; gap: 16px">
+<div class="thumb" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3">
+<div aria-hidden="true" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #DCDCD6">
+<div style="width: 78%; height: 72%; background: #FFFFFF; border-radius: 12px; box-shadow: 0 20px 40px -24px rgba(28,28,28,0.5); padding: 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="height: 8px; width: 40%; background: #1C1C1C; border-radius: 4px"></div>
+<div style="height: 6px; width: 70%; background: #E9E5DA; border-radius: 3px"></div>
+<div style="flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 6px">
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+<div style="border-radius: 6px; background: #F2B233"></div>
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+</div>
+</div>
+</div>
+<div class="overlay" style="position: absolute; inset: 0; background: rgba(28,28,28,0.82); display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; gap: 10px">
+<span style="align-self: flex-start; background: #F2B233; color: #1C1C1C; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px">[Key metric / impact]</span>
+<a href="#contact" style="color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">View case study →</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #1C1C1C; color: #FFFFFF">QA</span>
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #EDE8DC; color: #3D3D3A">SaaS</span>
+</div>
+<h3 style="margin: 0; font-size: 20px; letter-spacing: -0.02em; font-weight: 700">[E2E Test Automation Suite]</h3>
+<p style="margin: 0; font-size: 14px; color: #55554F">[Client Name]</p>
+</div>
+</article>
+<article data-cat="UI/UX" style="display: flex; flex-direction: column; gap: 16px">
+<div class="thumb" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3">
+<div aria-hidden="true" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #EDE8DC">
+<div style="width: 78%; height: 72%; background: #FFFFFF; border-radius: 12px; box-shadow: 0 20px 40px -24px rgba(28,28,28,0.5); padding: 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="height: 8px; width: 40%; background: #1C1C1C; border-radius: 4px"></div>
+<div style="height: 6px; width: 70%; background: #E9E5DA; border-radius: 3px"></div>
+<div style="flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 6px">
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+<div style="border-radius: 6px; background: #1C1C1C"></div>
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+</div>
+</div>
+</div>
+<div class="overlay" style="position: absolute; inset: 0; background: rgba(28,28,28,0.82); display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; gap: 10px">
+<span style="align-self: flex-start; background: #F2B233; color: #1C1C1C; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px">[Key metric / impact]</span>
+<a href="#contact" style="color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">View case study →</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #1C1C1C; color: #FFFFFF">UI/UX</span>
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #EDE8DC; color: #3D3D3A">SaaS</span>
+</div>
+<h3 style="margin: 0; font-size: 20px; letter-spacing: -0.02em; font-weight: 700">[Design System for B2B Platform]</h3>
+<p style="margin: 0; font-size: 14px; color: #55554F">[Client Name]</p>
+</div>
+</article>
+<article data-cat="Development" style="display: flex; flex-direction: column; gap: 16px">
+<div class="thumb" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3">
+<div aria-hidden="true" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #F6E3B4">
+<div style="width: 78%; height: 72%; background: #FFFFFF; border-radius: 12px; box-shadow: 0 20px 40px -24px rgba(28,28,28,0.5); padding: 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="height: 8px; width: 40%; background: #1C1C1C; border-radius: 4px"></div>
+<div style="height: 6px; width: 70%; background: #E9E5DA; border-radius: 3px"></div>
+<div style="flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 6px">
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+<div style="border-radius: 6px; background: #F2B233"></div>
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+</div>
+</div>
+</div>
+<div class="overlay" style="position: absolute; inset: 0; background: rgba(28,28,28,0.82); display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; gap: 10px">
+<span style="align-self: flex-start; background: #F2B233; color: #1C1C1C; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px">[Key metric / impact]</span>
+<a href="#contact" style="color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">View case study →</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #1C1C1C; color: #FFFFFF">Development</span>
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #EDE8DC; color: #3D3D3A">Fintech</span>
+</div>
+<h3 style="margin: 0; font-size: 20px; letter-spacing: -0.02em; font-weight: 700">[Marketing Site &amp; CMS]</h3>
+<p style="margin: 0; font-size: 14px; color: #55554F">[Client Name]</p>
+</div>
+</article>
+<article data-cat="QA" style="display: flex; flex-direction: column; gap: 16px">
+<div class="thumb" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3">
+<div aria-hidden="true" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #DCDCD6">
+<div style="width: 78%; height: 72%; background: #FFFFFF; border-radius: 12px; box-shadow: 0 20px 40px -24px rgba(28,28,28,0.5); padding: 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="height: 8px; width: 40%; background: #1C1C1C; border-radius: 4px"></div>
+<div style="height: 6px; width: 70%; background: #E9E5DA; border-radius: 3px"></div>
+<div style="flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 6px">
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+<div style="border-radius: 6px; background: #1C1C1C"></div>
+<div style="background: #F3EFE5; border-radius: 6px"></div>
+</div>
+</div>
+</div>
+<div class="overlay" style="position: absolute; inset: 0; background: rgba(28,28,28,0.82); display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; gap: 10px">
+<span style="align-self: flex-start; background: #F2B233; color: #1C1C1C; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px">[Key metric / impact]</span>
+<a href="#contact" style="color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none">View case study →</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #1C1C1C; color: #FFFFFF">QA</span>
+<span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 999px; background: #EDE8DC; color: #3D3D3A">E-Commerce</span>
+</div>
+<h3 style="margin: 0; font-size: 20px; letter-spacing: -0.02em; font-weight: 700">[Load Testing for Peak Sale]</h3>
+<p style="margin: 0; font-size: 14px; color: #55554F">[Client Name]</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" aria-labelledby="process-title" style="background: #1C1C1C; color: #FFFFFF; padding: 96px 20px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #D6D6D2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F2B233" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6c0 7 4 11 13 11"></path><path d="m14 13 4 4-4 4"></path></svg>Our Process</div>
+<h2 id="process-title" style="margin: 0; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.05; letter-spacing: -0.04em; font-weight: 700">A Transparent Path<br><span style="color: #9C9C97">From Idea To Launch</span></h2>
+</div>
+<p style="margin: 0; max-width: 400px; font-size: 16px; line-height: 1.65; color: #D6D6D2">Setiap tahap punya output yang jelas, sehingga Anda selalu tahu di mana posisi proyek dan apa langkah berikutnya.</p>
+</div>
+<ol class="process-grid" style="list-style: none; margin: 0; padding: 0; gap: 16px">
+<li style="border-top: 2px solid #F2B233; padding-top: 24px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 44px; font-weight: 800; letter-spacing: -0.04em; color: #F2B233">01</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.02em">Discovery &amp; Strategy</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.65; color: #C9C9C4">Memahami profil bisnis, riset pengguna, dan menentukan lingkup proyek.</p>
+</li>
+<li style="border-top: 2px solid #45453F; padding-top: 24px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 44px; font-weight: 800; letter-spacing: -0.04em; color: #FFFFFF">02</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.02em">Design &amp; Prototype</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.65; color: #C9C9C4">Menyusun arsitektur informasi, wireframe, dan desain antarmuka interaktif.</p>
+</li>
+<li style="border-top: 2px solid #45453F; padding-top: 24px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 44px; font-weight: 800; letter-spacing: -0.04em; color: #FFFFFF">03</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.02em">Development &amp; QA</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.65; color: #C9C9C4">Penulisan kode bersih, integrasi API, serta pengujian kualitas secara menyeluruh.</p>
+</li>
+<li style="border-top: 2px solid #45453F; padding-top: 24px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 44px; font-weight: 800; letter-spacing: -0.04em; color: #FFFFFF">04</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.02em">Launch &amp; Scaling</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.65; color: #C9C9C4">Peluncuran aplikasi dan pemantauan performa awal.</p>
+</li>
+</ol>
+</div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" aria-labelledby="testi-title" style="padding: 96px 20px">
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 40px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #3D3D3A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C98A00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6c0 7 4 11 13 11"></path><path d="m14 13 4 4-4 4"></path></svg>Testimonials</div>
+<h2 id="testi-title" style="margin: 0; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.05; letter-spacing: -0.04em; font-weight: 700">What Our Clients<br><span style="color: #8A8A85">Say About Us</span></h2>
+</div>
+
+<figure aria-live="polite" style="margin: 0; width: 100%; background: #FFFFFF; border: 1px solid #ECE8DE; border-radius: 28px; padding: clamp(28px, 5vw, 56px); display: flex; flex-direction: column; gap: 32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="#F2B233" aria-hidden="true"><path d="M9.5 6C6.5 7 4.5 9.6 4.5 13v5h6v-6h-3c0-2 1.2-3.6 3-4.3L9.5 6zm10 0c-3 1-5 3.6-5 7v5h6v-6h-3c0-2 1.2-3.6 3-4.3L19.5 6z"></path></svg>
+<blockquote id="testiQuote" style="margin: 0; font-size: clamp(1.25rem, 2.4vw, 1.75rem); line-height: 1.45; letter-spacing: -0.02em; font-weight: 500">[Kutipan ulasan klien — tuliskan pengalaman kerja sama dan hasil yang dirasakan.]</blockquote>
+<figcaption style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px">
+<div style="display: flex; align-items: center; gap: 14px">
+<div aria-hidden="true" style="width: 56px; height: 56px; border-radius: 50%; background: #F2B233; color: #1C1C1C; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px" id="testiInitials">C1</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-weight: 700; font-size: 16px" id="testiName">[Client Name]</span>
+<span style="font-size: 14px; color: #55554F" id="testiRole">[Position, Company]</span>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="font-size: 14px; color: #55554F; font-weight: 600; min-width: 44px" id="testiCounter">01 / 03</span>
+<button type="button" aria-label="Previous testimonial" id="testiPrev" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid #DEDBD2; background: #FFFFFF; color: #1C1C1C; display: inline-flex; align-items: center; justify-content: center; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+</button>
+<button type="button" aria-label="Next testimonial" id="testiNext" style="width: 48px; height: 48px; border-radius: 50%; border: none; background: #1C1C1C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg>
+</button>
+</div>
+</figcaption>
+</figure>
+</div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" aria-labelledby="contact-title" style="padding: 0 20px 96px">
+<div class="contact-grid" style="max-width: 1240px; margin: 0 auto; gap: 16px">
+<div style="background: #F2B233; border-radius: 28px; padding: 40px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase">Let's Talk</div>
+<h2 id="contact-title" style="margin: 0; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.05; letter-spacing: -0.04em; font-weight: 700">Punya ide produk? Mari wujudkan bersama.</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #2E2A20">Ceritakan kebutuhan Anda — kami akan membalas dengan langkah awal yang konkret.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; font-size: 15px; font-weight: 600">
+<a href="mailto:hello@creativestudio.com" style="color: #1C1C1C; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; padding: 4px 0">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+hello@creativestudio.com</a>
+<span style="display: inline-flex; align-items: center; gap: 10px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+Jakarta, Indonesia</span>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #ECE8DE; border-radius: 28px; padding: 40px">
+<div id="formSuccess" role="status" hidden style="min-height: 420px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 16px">
+<div style="width: 64px; height: 64px; border-radius: 50%; background: #F2B233; display: flex; align-items: center; justify-content: center">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1C1C1C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+</div>
+<h3 style="margin: 0; font-size: 26px; letter-spacing: -0.03em">Pesan terkirim!</h3>
+<p style="margin: 0; color: #4F4F4B; font-size: 15px; max-width: 360px; line-height: 1.6">Terima kasih. Tim kami akan menghubungi Anda melalui email dalam 1–2 hari kerja.</p>
+<button type="button" id="formReset" style="margin-top: 8px; background: transparent; border: 1px solid #DEDBD2; border-radius: 999px; padding: 12px 22px; font-weight: 600; font-size: 14px; cursor: pointer; color: #1C1C1C">Kirim pesan lain</button>
+</div>
+<form id="contactForm" action="#" method="post" style="display: flex; flex-direction: column; gap: 20px">
+<div class="form-2" style="gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-name" style="font-size: 14px; font-weight: 600">Full Name</label>
+<input id="f-name" name="name" type="text" required autocomplete="name" placeholder="Nama lengkap" style="height: 50px; border: 1px solid #D9D5CB; border-radius: 12px; padding: 0 16px; font-size: 15px; background: #FAF8F3; color: #1C1C1C">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-email" style="font-size: 14px; font-weight: 600">Work Email</label>
+<input id="f-email" name="email" type="email" required autocomplete="email" placeholder="nama@perusahaan.com" style="height: 50px; border: 1px solid #D9D5CB; border-radius: 12px; padding: 0 16px; font-size: 15px; background: #FAF8F3; color: #1C1C1C">
+</div>
+</div>
+<fieldset style="border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-size: 14px; font-weight: 600; padding: 0; margin-bottom: 10px">Service Needed</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<label class="svc-chip">
+<input type="checkbox" name="services" value="UI/UX">
+UI/UX
+</label>
+<label class="svc-chip">
+<input type="checkbox" name="services" value="Web Dev">
+Web Dev
+</label>
+<label class="svc-chip">
+<input type="checkbox" name="services" value="QA">
+QA
+</label>
+<label class="svc-chip">
+<input type="checkbox" name="services" value="Full Package">
+Full Package
+</label>
+</div>
+</fieldset>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-budget" style="font-size: 14px; font-weight: 600">Project Budget Range</label>
+<select id="f-budget" name="budget" style="height: 50px; border: 1px solid #D9D5CB; border-radius: 12px; padding: 0 14px; font-size: 15px; background: #FAF8F3; color: #1C1C1C">
+<option value="">Pilih rentang anggaran</option>
+<option>[Rentang anggaran 1]</option>
+<option>[Rentang anggaran 2]</option>
+<option>[Rentang anggaran 3]</option>
+<option>[Rentang anggaran 4]</option>
+</select>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="f-msg" style="font-size: 14px; font-weight: 600">Message</label>
+<textarea id="f-msg" name="message" required rows="5" placeholder="Ceritakan sedikit tentang proyek Anda…" style="border: 1px solid #D9D5CB; border-radius: 12px; padding: 14px 16px; font-size: 15px; background: #FAF8F3; color: #1C1C1C; resize: vertical"></textarea>
+</div>
+<button type="submit" style="align-self: flex-start; background: #1C1C1C; color: #FFFFFF; border: none; border-radius: 999px; padding: 16px 28px; font-size: 15px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 10px">Send Message
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F2B233" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background: #1C1C1C; color: #FFFFFF; padding: 72px 20px 32px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div class="footer-grid" style="gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<a href="#top" style="color: #F2B233; text-decoration: none; font-weight: 800; font-size: 26px; letter-spacing: -0.03em">creativestudio<span style="color: #FFFFFF">.</span></a>
+<p style="margin: 0; font-size: 14px; line-height: 1.65; color: #C9C9C4; max-width: 300px">Digital product studio untuk desain UI/UX, pengembangan web, dan quality assurance.</p>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #9C9C97; font-weight: 600; margin-bottom: 8px">Navigation</span>
+<a href="#services" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">Services</a>
+<a href="#work" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">Portfolio</a>
+<a href="#process" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">Process</a>
+<a href="#testimonials" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">Testimonials</a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #9C9C97; font-weight: 600; margin-bottom: 8px">Social</span>
+<a href="https://www.linkedin.com" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">LinkedIn</a>
+<a href="https://dribbble.com" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">Dribbble</a>
+<a href="https://github.com" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">GitHub</a>
+<a href="https://x.com" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">Twitter / X</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #9C9C97; font-weight: 600; margin-bottom: 8px">Contact</span>
+<a href="mailto:hello@creativestudio.com" style="color: #FFFFFF; text-decoration: none; font-size: 14px; padding: 6px 0">hello@creativestudio.com</a>
+<span style="font-size: 14px; padding: 6px 0">Jakarta, Indonesia</span>
+</div>
+</div>
+<div style="border-top: 1px solid #3A3A36; padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 13px; color: #B9B9B4">
+<span>© 2026 Creative Studio. All rights reserved.</span>
+<div style="display: flex; gap: 20px">
+<a href="#top" style="color: #B9B9B4; text-decoration: none">Privacy Policy</a>
+<a href="#top" style="color: #B9B9B4; text-decoration: none">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
